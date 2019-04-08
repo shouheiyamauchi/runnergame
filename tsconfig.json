@@ -19,7 +19,8 @@
     "noEmit": true,
     "jsx": "preserve"
   },
+  "extends": "./tsconfig.paths.json",
   "include": [
-    "src"
+    "src/**/*"
   ]
 }
