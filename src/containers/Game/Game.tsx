@@ -1,25 +1,24 @@
 import Phaser from 'phaser'
 import React from 'react'
 
-import ExampleScene from './scenes/example'
+// import ExampleScene from './scenes/example'
+import MazeScene from './scenes/maze'
 
 class Game extends React.Component {
   public componentDidMount() {
     const config: GameConfig = {
+      backgroundColor: 0x444444,
       height: 600,
       parent: 'phaser-game',
       physics: {
-        arcade: {
-          gravity: { y: 200 }
-        },
         default: 'arcade'
       },
-      scene: [ExampleScene],
+      scene: [MazeScene],
       type: Phaser.AUTO,
       width: 800
     }
 
-    return new Phaser.Game(config)
+    window.PhaserGame = new Phaser.Game(config)
   }
 
   public render() {
