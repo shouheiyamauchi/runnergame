@@ -1,8 +1,9 @@
 {
-  "name": "runnergame",
+  "name": "RunnerGame",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "hex2dec": "^1.1.2",
     "phaser": "^3.16.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
